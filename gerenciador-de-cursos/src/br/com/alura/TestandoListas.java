@@ -1,0 +1,36 @@
+package br.com.alura;
+
+import java.util.*;
+
+public class TestandoListas {
+
+	public static void main(String[] args) {
+		
+		String curso1 = "SQL Server";
+		String curso2 = "Python";
+		String curso3 = "PHP";
+		
+		ArrayList<String> cursos = new ArrayList<>();
+		cursos.add(curso1);
+		cursos.add(curso2);
+		cursos.add(curso3);
+		
+		System.out.println(cursos);
+		
+		cursos.remove(1);
+		System.out.println(cursos);
+		
+		System.out.println("Primeiro curso: " + cursos.get(0));
+		
+		cursos.add(curso2);
+		/*
+		for(int i = 0; i < cursos.size(); i++) {
+			System.out.println(i+1 + "º " + cursos.get(i));
+		}
+		*/
+		
+		Collections.sort(cursos);
+		System.out.println(cursos);
+		
+	}
+}

@@ -1,0 +1,21 @@
+package br.com.alura;
+
+import java.util.List;
+
+public class TestaCurso {
+
+	public static void main(String[] args) {
+
+		Curso curso = new Curso("Banco de Dados", "Luis Souza");
+		List<Aula> aulas = curso.getAulas();
+		curso.getAulas().add(new Aula("Criando o primeiro Banco de Dados", 14));
+		curso.getAulas().add(new Aula("Aprendendo a alterar Tabelas", 20));
+		curso.getAulas().add(new Aula("Select", 18));
+		
+		for(int i = 0; i < aulas.size(); i++) {
+			System.out.println(curso.getAulas().indexOf(i)));
+		}
+		
+	}
+
+}

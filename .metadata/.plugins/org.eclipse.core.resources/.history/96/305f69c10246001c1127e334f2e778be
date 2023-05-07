@@ -1,0 +1,11 @@
+package br.com.alura.java.io.teste;
+
+public class TesteUnicodeEEncoding {
+
+	public static void main(String[] args) {
+
+		
+		
+	}
+
+}
